@@ -1,0 +1,54 @@
+.item
+    display: flex
+    background-color: #303134
+    padding: 15px 20px
+    margin-bottom: 10px
+    font-size: 16px
+    border-radius: 10px
+    box-shadow: 0 1px 3px rgb(23 23 23 / 24%)
+    transition: box-shadow 0.5s
+    cursor: pointer
+    &:last-child
+        margin-bottom: 0
+    &:hover
+        box-shadow: 0 4px 6px 0 #171717
+
+.itemName
+    width: 80%
+
+.itemSalary
+    width: 10%
+
+.itemActions
+    display: flex
+    justify-content: space-around
+    width: 10%
+
+svg
+    width: 25px
+    height: 25px
+    cursor: pointer
+    display: block
+    opacity: 0
+    transition: opacity 0.5s
+
+.iconTrash
+    opacity: 100%
+    &:hover
+        fill: red
+
+
+.iconMedal
+    opacity: 100%
+    &:hover
+        fill: yellow
+
+.iconStar
+    opacity: 100%
+    fill: yellow
+    transition: opacity 0.5s
+
+.active
+    color: yellow
+    .iconMedal
+        fill: yellow
